@@ -570,8 +570,6 @@ module DocuSign_eSign
           :oauth => true
       }
       data, status_code, headers = self.call_api("POST", '/oauth/token', params)
-      abort(data.inspect)
-
     end
 
     def set_access_token(token_obj)
